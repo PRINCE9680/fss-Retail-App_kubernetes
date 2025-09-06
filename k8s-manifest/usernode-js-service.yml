@@ -4,7 +4,7 @@ metadata:
   name: usernode-js-service
   namespace: prince
 spec:
-  type: LoadBalancer # Use NodePort if LoadBalancer is not supported
+  type: ClusterIP    # Use NodePort or LoadBalancer to access application outside cluster
   ports:
     - port: 3130
       targetPort: 3130
