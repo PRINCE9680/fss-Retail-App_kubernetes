@@ -2,9 +2,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: usernode-js-service
-  namespace: prince-ns
+  namespace: prince
 spec:
-  type: LoadBalancer  # Use NodePort if LoadBalancer is not supported
+  type: LoadBalancer # Use NodePort if LoadBalancer is not supported
   ports:
     - port: 3130
       targetPort: 3130
